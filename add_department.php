@@ -26,26 +26,25 @@
 		$message = "Add a department.";
 	}
 ?>
-
-	<div class="row">
-		<div class="col-md-12">
-			<h3><?php echo $message; ?></h3>
-		</div>
+<div class="row">
+	<div class="col-md-12">
+		<h3><?php echo $message; ?></h3>
 	</div>
-	<div class="row ">
-		<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" class="">
-		<div class="col-md-12" id="">
-				<pre>Department Name :<input type="text" name="dept_name"></pre><br>
-				<pre>Department id  :<select name="dept_id">
-				<?php 
-					$query = mysqli_query($connect,"SELECT * FROM departments");
-					$count = mysqli_num_rows($query);
-					for($i=1; $i <= ($count+1); $i++){
-					echo "<option>".$i."</option>";
-					}
-				?>
-				</select></pre><br>
-				<input type="submit" name="submit" value="submit">
-		</form>
-		</div>
+</div>
+<div class="row ">
+	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" class="">
+	<div class="col-md-12" id="">
+			<pre>Department Name :<input type="text" name="dept_name"></pre><br>
+			<pre>Department id  :<select name="dept_id">
+			<?php 
+				$query = mysqli_query($connect,"SELECT * FROM departments");
+				$count = mysqli_num_rows($query);
+				for($i=1; $i <= ($count+1); $i++){
+				echo "<option>".$i."</option>";
+				}
+			?>
+			</select></pre><br>
+			<input type="submit" name="submit" value="submit">
+	</form>
 	</div>
+</div>
