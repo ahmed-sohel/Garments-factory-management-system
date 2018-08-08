@@ -33,7 +33,7 @@
 </div>
 <div class="row ">
 	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" class="">
-	<div class="col-md-12" id="">
+		<div class="col-md-12" id="">
 			<pre>Department Name :<input type="text" name="dept_name"></pre><br>
 			<pre>Department id  :<select name="dept_id">
 			<?php 
@@ -45,6 +45,6 @@
 			?>
 			</select></pre><br>
 			<input type="submit" name="submit" value="submit">
+		</div>
 	</form>
-	</div>
 </div>
