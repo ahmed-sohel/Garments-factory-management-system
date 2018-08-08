@@ -1,0 +1,274 @@
+/*style for 'manage.php' page*/
+body{font-weight: normal;font-family: sans-serif;}
+p{font-size: 1.2em;}
+.img{
+    background-color: gray;
+}
+.img img{
+    height: 80px;
+    margin-left: 3%;
+    margin-bottom: 1%;
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+}
+.logout ul{
+    list-style-type: none;
+}
+.logout ul li a {
+    color: #EC0A32;
+    display: block;
+    background-color: #fff;
+    padding: 5px;
+    margin: 15px 105px 0 0;
+    float: right;
+    border-radius: 5px;
+    text-decoration: none;
+}
+/*main navigation*/
+#navigation{
+    background: -webkit-linear-gradient(to bottom, rgb(255,255,255),rgb(192,192,192)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(to bottom, rgb(255,255,255),rgb(192,192,192)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(to bottom, rgb(255,255,255),rgb(192,192,192)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, rgb(255,255,255),rgb(192,192,192)); /* Standard syntax (must be last) */
+}
+#navigation ul{
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 7%;
+    font-size: 1.2em;
+}
+#navigation ul li{
+    float: left;
+    position: relative;
+}
+#navigation ul li a{
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #000;
+}
+#navigation ul li a:hover{
+    background-color: #fff;
+}
+/*dropdown*/
+#navigation ul li ul{
+    position: absolute;
+    left: -99999px;
+}
+#navigation ul li:hover ul{
+    left: -7%;
+    position: absolute;
+    z-index: 1;
+}
+#navigation ul li:hover ul li{
+    width: 150px;
+    background-color: #A3D100;
+    border-bottom: 1px solid #fff;
+    padding-top:-15px;
+    font-size: .8em;
+}
+#navigation ul li:hover ul li a{
+    width: 100%;
+    color: #fff;
+    padding: 5px 0 5px 5px;
+}
+#navigation ul li:hover ul li a:hover{
+    background-color: #389C00;
+}
+.row:nth-child(3){
+    margin: 2% 0 0 5%;
+}
+span{font-weight: bold;
+    font-size: 1.5em;
+    color: blue;
+}
+.new .col-md-6{
+    width: 42%;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding: 15px 0 0 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h3{text-align: center;}
+
+/*style for 'manage.php' page ends*/
+
+/*style for 'show_info.php' page*/
+#table{
+    width: 90%;
+    margin: 5% 5%;
+}
+#table th{
+    background-color: #A9D7B8;
+}
+#table th,tr,td{
+    border : 1px solid #000;
+    text-align: center;
+    height: 40px;
+    font-size: 1.1em;
+}
+#table td:nth-child(6) a{color: ;}
+/*style for 'show_info.php' page ends*/
+
+/*style for 'add_employee.php page'*/
+.info{margin: 2% 5%; height: 800px;}
+.info pre{width: 72%;font-size: .8em; background-color: #E5E7E9}
+.info input{width: 70%;font-size: 1.3em;font-weight: normal;}
+.info select{width: 70%;font-size: 1.3em;font-weight: normal;}
+#info01{/*for personal info part*/
+    width: 50%;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 10px; 
+    background-color: #D7DBDD;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+#info01 p{padding-top:5px; text-align: center;font-size: 1.2em;}
+#info02{/*for job related info part*/
+    width: 50%;
+    min-height: 350px;
+    font-size: 1.4em;
+    font-weight: bold;
+    background-color: #D7DBDD;
+    padding-left: 20px; 
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*#add {//button for adding employee
+    bottom: 0;
+    margin-left: 80%;
+    margin-bottom: 2%;
+    position: absolute;
+    width: 60px;
+    padding: 10px;
+}
+#add:hover{background-color: green;color: #fff;}*/
+/*style for 'add_employee.php page' ends*/
+/*style for single.php*/
+.form_in{width: 100%;margin: 0;padding: 0;}
+.form_in form{
+    margin: 3% 5% 0 5%;
+}
+.form_out_1{
+    padding: 10px;
+    position: absolute;
+    width: 40%;
+    min-height: 200px;
+    box-shadow: 0 3px 4px gray;
+    font-size: 1.2em;
+    border-top: 3px solid green;
+
+}
+.form_out_2{
+    padding: 10px;
+    position: relative;
+    float: right;
+    width: 45%;
+    min-height: 200px;
+    box-shadow: 0 3px 4px gray;
+    font-size: 1.2em;
+    border-top: 3px solid green;
+
+}
+.form_in form input{
+    float: right;
+    margin-right: 40%;
+    font-size: .9em;
+    width: 40%;
+}
+.edit{
+    font-size: 1.2em;
+    clear: both;
+    margin-top: 15%;
+    text-align: center;
+}
+.edit a{padding: 5px;}
+.edit a:hover{
+    text-decoration: none;
+    border: 1px solid #000;
+    border-radius: 3px;
+    background-color: #43ADEA;
+    color: #000;
+}
+/*style for single.php ends*/
+/*style for add_employee.php*/
+#update{
+    margin-top: 20%;
+    width: 70px;
+    text-align: center;
+}
+.form_in a{
+    margin-top: 40%;
+}
+/*style for add_employee.php ends*/
+/*style for employee_profile.php*/
+.header li{list-style-type: none;}
+.header hr{
+    align:left;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;    
+}
+
+/*style for employee_profile.php ends*/
+/* style for edit_item.php starts*/
+.new img{
+    float: right;
+    border-radius: 4px;
+    border: 2px solid #ddd;
+    margin: 1%;
+    padding: 2px;
+    float: left;
+}
+
+.inputs input{width: 30%;margin-left: }
+*//* style for edit_item.php ends
+/* style for inventory.php starts*/
+#main{
+    height:600px;width:100%;
+    margin:0 0.5%;padding:0;
+    background:#CC3;
+}
+#page{background-color: #CC3; min-height: 1000px;}
+#resource_nav{
+    float:left;
+    width:200px;height:100%;
+    margin:0;padding:0 1em;
+    line-height: 2em;
+    color:white;
+    background:gray;
+    min-height: 1000px;
+}
+#resource_nav a{color: #fff;}
+
+#division1{
+    height:;
+    vertical-align: top;
+    background:#CC3;min-height: 1000px;
+}
+#division2{
+    height:100%;
+    padding-left:2em; vertical-align: top;
+    background:#CC3;min-height: 1000px;
+}
+.cancel{
+    font-size: 1.2em;
+    clear: both;
+    margin: 10% 0 0 2%;
+    text-align: center;
+}
+
+/* style for inventory.php ends*/
+/*style for add_new_item.php starts*/
+.all_inputs form{
+    width: 300px;
+    clear: both;
+}
+.all_inputs input{width: 100%;clear: left;}
+
+/*style for add_new_item.php ends*/
